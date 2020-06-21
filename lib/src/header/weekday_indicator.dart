@@ -39,21 +39,26 @@ class WeekdayIndicator extends StatelessWidget {
 }
 
 String _dayName(LocalDate d) {
-  switch (d.dayOfWeek) {
-    case DayOfWeek.monday:
-      return '월';
-    case DayOfWeek.tuesday:
-      return '화';
-    case DayOfWeek.wednesday:
-      return '수';
-    case DayOfWeek.thursday:
-      return '목';
-    case DayOfWeek.friday:
-      return '금';
-    case DayOfWeek.saturday:
-      return '토';
-    case DayOfWeek.sunday:
-      return '일';
+  if (d.dayOfWeek == DayOfWeek.monday) {
+    return '월';
+  }
+  if (d.dayOfWeek == DayOfWeek.tuesday) {
+    return '화';
+  }
+  if (d.dayOfWeek == DayOfWeek.wednesday) {
+    return '수';
+  }
+  if (d.dayOfWeek == DayOfWeek.thursday) {
+    return '목';
+  }
+  if (d.dayOfWeek == DayOfWeek.friday) {
+    return '금';
+  }
+  if (d.dayOfWeek == DayOfWeek.saturday) {
+    return '토';
+  }
+  if (d.dayOfWeek == DayOfWeek.sunday) {
+    return '일';
   }
   return '';
 }
