@@ -31,13 +31,6 @@ class TimetableHeader<E extends Event> extends StatelessWidget {
       children: <Widget>[
         SizedBox(
           width: hourColumnWidth,
-          child: Center(
-            child: ValueListenableBuilder<LocalDate>(
-              valueListenable: controller.dateListenable,
-              builder: (context, date, _) =>
-                  WeekIndicator(weekYearRule.getWeekOfWeekYear(date)),
-            ),
-          ),
         ),
         Expanded(
           child: Column(

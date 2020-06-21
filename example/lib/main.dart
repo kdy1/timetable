@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:time_machine/time_machine.dart';
 import 'package:timetable/timetable.dart';
 
-// ignore: unused_import
 import 'positioning_demo.dart';
 import 'utils.dart';
 
